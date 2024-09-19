@@ -202,7 +202,7 @@
 
                 <ImageView
                     style="@style/AdditionalWeatherInformationIconStyle"
-                    tools:src="@drawable/ic_thermostat_24" />
+                    android:src="@drawable/ic_thermostat_24" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/main_pressure_tv"
@@ -212,7 +212,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="8dp"
                     android:textSize="14sp"
-                    tools:text="1,5 h.pa" />
+                    android:text="1,5 h.pa" />
 
             </LinearLayout>
 
@@ -225,7 +225,7 @@
 
                 <ImageView
                     style="@style/AdditionalWeatherInformationIconStyle"
-                    tools:src="@drawable/ic_drop_24" />
+                    android:src="@drawable/ic_drop_24" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/main_humidity_tv"
@@ -235,7 +235,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="8dp"
                     android:textSize="14sp"
-                    tools:text="8.37 %" />
+                    android:text="8.37 %" />
 
             </LinearLayout>
 
@@ -246,7 +246,7 @@
 
                 <ImageView
                     style="@style/AdditionalWeatherInformationIconStyle"
-                    tools:src="@drawable/ic_flag_24" />
+                    android:src="@drawable/ic_flag_24" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/main_wind_speed_tv"
@@ -256,7 +256,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="8dp"
                     android:textSize="14sp"
-                    tools:text="3 m/s" />
+                    android:text="3 m/s" />
 
             </LinearLayout>
 
@@ -281,7 +281,7 @@
 
                 <ImageView
                     style="@style/AdditionalWeatherInformationIconStyle"
-                    tools:src="@drawable/ic_sunup" />
+                    android:src="@drawable/ic_sunup" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/main_sunrise_tv"
@@ -291,7 +291,7 @@
                     android:layout_gravity="bottom"
                     android:layout_marginStart="8dp"
                     android:textSize="14sp"
-                    tools:text="06:40" />
+                    android:text="06:40" />
 
             </LinearLayout>
 
@@ -304,7 +304,7 @@
 
                 <ImageView
                     style="@style/AdditionalWeatherInformationIconStyle"
-                    tools:src="@drawable/ic_sunrise" />
+                    android:src="@drawable/ic_sunrise" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/main_sunset_tv"
@@ -314,7 +314,7 @@
                     android:layout_gravity="bottom"
                     android:layout_marginStart="8dp"
                     android:textSize="14sp"
-                    tools:text="20:40" />
+                    android:text="20:40" />
 
             </LinearLayout>
         </LinearLayout>

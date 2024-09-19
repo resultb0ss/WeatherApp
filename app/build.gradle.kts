@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.google.devtools.ksp")
 
 }
 
@@ -55,4 +56,8 @@ dependencies {
     // View
     implementation(libs.material.vversion)
     implementation(libs.androidx.swiperefreshlayout)
+
+    //ButterKnife
+    implementation(libs.butterknife)
+//    ksp(libs.xbutterknife.compiler)
 }

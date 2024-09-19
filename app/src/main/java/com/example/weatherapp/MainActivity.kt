@@ -14,18 +14,13 @@ import com.example.weatherapp.view.adapters.MainHourlyListAdapter
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-//    private lateinit var bindingSheet: ItemMainHourlyBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
-//        bindingSheet = ItemMainHourlyBinding.inflate(layoutInflater)
-
-//        val bottomSheetView = bindingSheet.root
         val view = binding.root
-
-//        setContentView(bottomSheetView)
         setContentView(view)
 
         binding.mainHourlyList.apply {
@@ -50,6 +45,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initViews(){
+
         binding.mainCityNameTv.text = "Moscow"
         binding.mainDateNameTv.text = "1 april"
         binding.mainIconWeatherConditions.setImageResource(R.drawable.ic_sun)

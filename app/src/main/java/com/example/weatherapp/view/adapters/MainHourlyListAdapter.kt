@@ -1,12 +1,23 @@
 package com.example.weatherapp.view.adapters
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.weatherapp.R
+import com.example.weatherapp.business.model.HourlyWeatherModel
+import com.example.weatherapp.databinding.ActivityMainBinding
+import com.example.weatherapp.databinding.ItemMainHourlyBinding
+import com.google.android.material.textview.MaterialTextView
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import butterknife.BindView
+import butterknife.ButterKnife
 
-class MainHourlyListAdapter: RecyclerView.Adapter<MainHourlyListAdapter.HourlyViewHolder>() {
+const val TAG = "RV_TEST"
+class MainHourlyListAdapter: BaseAdapter<HourlyWeatherModel>(){
 
 
 
@@ -15,14 +26,28 @@ class MainHourlyListAdapter: RecyclerView.Adapter<MainHourlyListAdapter.HourlyVi
         return HourlyViewHolder(view)
     }
 
-    override fun getItemCount() = 10
 
-    override fun onBindViewHolder(holder: HourlyViewHolder, position: Int) {
 
-    }
+    inner class HourlyViewHolder(view: View): BaseViewHolder(view){
 
-    inner class HourlyViewHolder(view: View): RecyclerView.ViewHolder(view){
+        lateinit var binding: ItemMainHourlyBinding
 
+        init {
+
+
+        }
+
+        override fun bindView(position: Int) {
+
+
+//            binding.itemHourlyPopTv.text = "17%"
+//            binding.itemHourlyTempTv.text = "19\u00B0"
+//            binding.itemHourlyTimeTv.text = "19:00"
+//            binding.itemHourlyConditionIcon.setImageResource(R.drawable.ic_sun)
+
+
+
+        }
     }
 }
 
