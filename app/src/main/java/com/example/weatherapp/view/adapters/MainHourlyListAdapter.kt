@@ -20,9 +20,13 @@ const val TAG = "RV_TEST"
 class MainHourlyListAdapter: BaseAdapter<HourlyWeatherModel>(){
 
 
+    lateinit var binding: ItemMainHourlyBinding
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HourlyViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_main_hourly,parent,false)
+
+        val layoutInflater = LayoutInflater.from(parent.context)
+        val binding = ItemMainHourlyBinding.inflate(layoutInflater)
+        val view = binding.root
         return HourlyViewHolder(view)
     }
 
@@ -30,7 +34,6 @@ class MainHourlyListAdapter: BaseAdapter<HourlyWeatherModel>(){
 
     inner class HourlyViewHolder(view: View): BaseViewHolder(view){
 
-        lateinit var binding: ItemMainHourlyBinding
 
         init {
 
@@ -40,14 +43,16 @@ class MainHourlyListAdapter: BaseAdapter<HourlyWeatherModel>(){
         override fun bindView(position: Int) {
 
 
-//            binding.itemHourlyPopTv.text = "17%"
-//            binding.itemHourlyTempTv.text = "19\u00B0"
-//            binding.itemHourlyTimeTv.text = "19:00"
-//            binding.itemHourlyConditionIcon.setImageResource(R.drawable.ic_sun)
+            binding.itemHourlyPopTv.text = "17%"
+            binding.itemHourlyTempTv.text = "19\u00B0"
+            binding.itemHourlyTimeTv.text = "19:00"
+            binding.itemHourlyConditionIcon.setImageResource(R.drawable.ic_sun)
 
 
 
         }
     }
 }
+
+
 
